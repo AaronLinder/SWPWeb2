@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+div.fix {
+    height: 50px;
+    width: 50px;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgb(195, 1, 217);
+}
+li{
+    position: relative;
+    left: 20px;
+}
+div.title {
+    height: 300px;
+    width: 400px;
+    margin: 20px;
+    background-color: deepskyblue;
+    position: relative;
+    top:20px;
+    left: 20px;
+}
+div.title h1 {
+    position: relative;
+    top: 20px;
+    left:20px;
+    margin: 20px;
+}
+div.title .box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(82, 58, 0);
+}
+.items {
+    position: relative;
+    top: 50px;
+    display: flex;
+    background-color: yellow;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.items .item {
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: green;
+}
