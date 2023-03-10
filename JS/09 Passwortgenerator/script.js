@@ -3,6 +3,9 @@ function passwort(){
     let passwort = "";
     for(let i = 0; i < length; i++){
         passwort = passwort + passwortteil();
+        if(passwort == "Kapput"){
+            break;
+        }
     }
     document.getElementById("Password").innerHTML = passwort;
 }
@@ -13,21 +16,26 @@ function passwortteil(){
     let groß = document.getElementById("groß").checked;
     let zahl = document.getElementById("Zahl").checked;
     let zeichen = document.getElementById("Zeichen").checked;
-    while(true){
-        let random = Math.round(Math.random()*3);
-        if(klein && random == 0){
-            teil = Klein();
-            break;
-        }else if(groß && random == 1){
-            teil = gross();
-            break;
-        }else if(zahl && random == 2){
-            teil = Zahl();
-            break;
-        }else if(zeichen && random == 3){
-            teil = Zeichen();
-            break;
+    if(klein || groß || zahl || zeichen){
+        while(true){
+            let random = Math.round(Math.random()*3);
+            if(klein && random == 0){
+                teil = Klein();
+                break;
+            }else if(groß && random == 1){
+                teil = gross();
+                break;
+            }else if(zahl && random == 2){
+                teil = Zahl();
+                break;
+            }else if(zeichen && random == 3){
+                teil = Zeichen();
+                break;
+            }
         }
+    }
+    else{
+        return "Kapput";
     }
     return teil;
 }
