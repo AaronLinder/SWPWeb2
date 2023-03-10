@@ -1,0 +1,21 @@
+html{
+    background-color: red;
+}
+
+button{
+    width: 100%;
+    text-align: center;
+}
+
+input{
+    width: 200px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-evenly;   
+}
+
+h1{
+    text-align: center;
+}
