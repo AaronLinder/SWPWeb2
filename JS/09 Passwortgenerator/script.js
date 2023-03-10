@@ -3,7 +3,7 @@ function passwort(){
     let passwort = "";
     for(let i = 0; i < length; i++){
         passwort = passwort + passwortteil();
-        if(passwort == "Kapput"){
+        if(passwort == "Kein Zeichensatz ausgewählt"){
             break;
         }
     }
@@ -35,7 +35,7 @@ function passwortteil(){
         }
     }
     else{
-        return "Kapput";
+        return "Kein Zeichensatz ausgewählt";
     }
     return teil;
 }
