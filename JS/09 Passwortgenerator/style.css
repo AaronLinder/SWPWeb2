@@ -1,0 +1,6 @@
+#Eingabe{
+    background-color: rgb(115, 224, 115);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
