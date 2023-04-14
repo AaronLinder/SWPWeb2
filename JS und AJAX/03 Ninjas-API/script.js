@@ -19,7 +19,7 @@ function loadanimal(name) {
 function showAnimal(data) {
     let html = "";
     data.forEach(element => {
-        html += "<li onClick='getanimalinfo(\""+ element.name + "\")'>" + element.name + "</li>";
+        html += "<li pointer onClick='getanimalinfo(\""+ element.name + "\")'>" + element.name + "</li>";
     });
 
     document.getElementById("list").innerHTML = html;
