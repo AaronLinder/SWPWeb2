@@ -1,3 +1,8 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 #header{
     background-color: rgb(235, 179, 106);
     height: 100px;
