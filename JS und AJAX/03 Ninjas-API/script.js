@@ -33,24 +33,21 @@ function getanimalinfo(name){
         }
     })
     .then(response => response.json())
-    .then(data => showAnimalInfo(data))
+    .then(data => showAnimalInfo(data.find(element => element.name == name)))
     .catch(err => console.error(err));
 }
 
 function showAnimalInfo(data) {
     document.getElementById("searchbar").innerHTML = "neues Tier suchen (englischer Name)";
     let html = "";
-    data.forEach(element => {
-        html += "<li>"+ "Name: " + element.name + "</li>";
-        html += "<li>"+ "Lebensraum: " + element.locations + "</li>"
-        html += "<li>"+ "Wissenschaftlichername: " + element.taxonomy.scientific_name + "</li>"
-        html += "<li>"+ "Größe: " + element.characteristics.height + "</li>";
-        html += "<li>"+ "Gewicht: " + element.characteristics.weight + "</li>";
-        html += "<li>"+ "Höchstgeschwindigkeit: " + element.characteristics.top_speed + "</li>";
-        html += "<li>"+ "Farbe: " + element.characteristics.color + "</li>";
-        html += "<li>"+ "Lebensdauer: " + element.characteristics.lifespan + "</li>";
-        
-    });
+    html += "<li>"+ "Name: " + data.name + "</li>";
+    html += "<li>"+ "Lebensraum: " + data.locations + "</li>"
+    html += "<li>"+ "Wissenschaftlichername: " + data.taxonomy.scientific_name + "</li>"
+    html += "<li>"+ "Größe: " + data.characteristics.height + "</li>";
+    html += "<li>"+ "Gewicht: " + data.characteristics.weight + "</li>";
+    html += "<li>"+ "Höchstgeschwindigkeit: " + data.characteristics.top_speed + "</li>";
+    html += "<li>"+ "Farbe: " + data.characteristics.color + "</li>";
+    html += "<li>"+ "Lebensdauer: " + data.characteristics.lifespan + "</li>";
 
     document.getElementById("list").innerHTML = html;
 }
