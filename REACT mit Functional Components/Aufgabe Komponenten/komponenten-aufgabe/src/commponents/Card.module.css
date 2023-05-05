@@ -1,0 +1,22 @@
+.info{
+    margin-top: -6px;
+    background-color: white;
+    text-align: left;
+}
+
+.info span{
+    display: block;
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.card{
+    margin-top: 10px;
+    width: 200px;
+}
+
+.image {
+    max-height: 100%;
+    max-width: 100%;
+}
