@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <Liste items={["Coffee", "Tea", "Beer"]}/>
         <Button text="Grün"></Button>
-        <Card></Card>
+        <Card name="Günther" desc="Test"></Card>
       </header>
     </div>
   );
