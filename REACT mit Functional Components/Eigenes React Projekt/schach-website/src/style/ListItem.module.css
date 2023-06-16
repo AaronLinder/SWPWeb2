@@ -1,0 +1,20 @@
+.item{
+    background-color: white;
+    margin: 0 20%;
+    margin-top: 3vh;
+    padding: 1%;
+    text-align: left;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img{
+    max-width: 100px;
+}
+
+.winRates * {
+    text-align: right;
+    display: block;
+}

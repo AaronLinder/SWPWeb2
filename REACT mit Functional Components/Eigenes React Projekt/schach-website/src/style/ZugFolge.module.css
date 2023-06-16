@@ -1,0 +1,84 @@
+.img{
+    max-width: 50%;
+}
+
+.item{
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 0;
+}
+
+.lightTitle {
+    display: block;
+    color: #BABABA;
+    font-size: 1rem;
+}
+
+.item > * {
+    width: 100%;
+}
+
+.winRateMoves {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.winRates {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+}
+
+.winRateItem {
+    font-size: 2rem;
+    background-color: white;
+    padding: 20px 40px;
+    margin: 10px;
+    border-radius: 2rem;
+}
+
+.controller {
+    text-align: center;
+    background-color: white;
+    padding-top: 2%;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.zurueck{
+    padding: 8px;
+    border-bottom-left-radius: 20px;
+    width: 50%;
+    border-style: none;
+    background-color: #BABABA;
+    
+}
+
+.zurueck:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.vor{
+    padding: 8px;
+    border-bottom-right-radius: 20px;
+    width: 50%;
+    border-style: none;
+    background-color: #BABABA;
+}
+
+.vor:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.textzug{
+    padding: 50px;
+    font-size: 35px;
+    text-align: center;
+}

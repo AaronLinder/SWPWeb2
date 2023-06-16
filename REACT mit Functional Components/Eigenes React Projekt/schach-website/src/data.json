@@ -1,0 +1,103 @@
+{
+    "openings": [
+        {
+            "id": 1,
+            "name": "Four Knights Game",
+            "winRateW": "32%",
+            "winRateB": "26%",
+            "moves": [
+                {
+                    "move": "E4",
+                    "image": "images/moves/E4.jpg"
+                },
+                {
+                    "move": "E5",
+                    "image": "images/moves/E4E5.jpg"
+                },
+                {
+                    "move": "Nf3",
+                    "image": "images/moves/E4E5NF3.jpg"
+                },
+                {
+                    "move": "Nc6",
+                    "image": "images/moves/E4E5NF3NC6.jpg"
+                },
+                {
+                    "move": "Nc3",
+                    "image": "images/moves/E4E5NF3NC6NC3.jpg"
+                },
+                {
+                    "move": "Nf6",
+                    "image": "images/moves/E4E5NF3NC6NC3NF6.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Kings Gambit",
+            "winRateW": "41%",
+            "winRateB": "39%",
+            "image": "images/general_%id%.jpg",
+            "moves": [
+                {
+                    "move": "E4",
+                    "image": "images/moves/E4.jpg"
+                },
+                {
+                    "move": "E5",
+                    "image": "images/moves/E4E5.jpg"
+                },
+                {
+                    "move": "F4",
+                    "image": "images/moves/E4E5F4.jpg"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Queens Gambit",
+            "winRateW": "38%",
+            "winRateB": "35%",
+            "image": "images/general_%id%.jpg",
+            "moves": [
+                {
+                    "move": "E4",
+                    "image": "images/moves/D4.jpg"
+                },
+                {
+                    "move": "E5",
+                    "image": "images/moves/D4D5.jpg"
+                },
+                {
+                    "move": "F4",
+                    "image": "images/moves/D4D5C4.jpg"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Queens Gambit Declined",
+            "winRateW": "42%",
+            "winRateB": "23%",
+            "image": "images/general_%id%.jpg",
+            "moves": [
+                {
+                    "move": "E4",
+                    "image": "images/moves/D4.jpg"
+                },
+                {
+                    "move": "E5",
+                    "image": "images/moves/D4D5.jpg"
+                },
+                {
+                    "move": "F4",
+                    "image": "images/moves/D4D5C4.jpg"
+                },
+                {
+                    "move": "F4",
+                    "image": "images/moves/D4D5C4E6.jpg"
+                }
+            ]
+        }
+    ]
+}
